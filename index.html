@@ -31,44 +31,86 @@
   <header id="header">
     <div class="full-width">
       <div class="half-width" id="logo">
-        <img src="  YOU HAVE TO ADD THE ICONS TO THE IMG FOLDER TO LINK" alt="">
-        <h1 class="logo"><span class="sev">Sev</span><span class="welker">Welker</span></h1>
+        <img id="logo-icon" src="img/pineapple-multi-color.png" alt="A very simple pineapple logo">
+        <h1 id="logo"><span class="sev">Sev</span><span class="welker">Welker</span></h1>
       </div>
       <nav class="half-width" id="nav">
-
+        <ul>
+          <li id="nav1">work</li>
+          <li id="nav2">about</li>
+          <li id="nav3">contact</li>
+        </ul>
       </nav>
     </div>
   </header>
+
   <!--MAIN-->
   <main>
     <!--Home-->
       <section class="intro">
-        <div class="full-width">
-
+        <div id="intro-full-width" class="full-width">
+          <p id="intro-text">I am a San Francisco based designer and front-end web developer focused on crafting clean and creative user-friendly experiences with code, design, music and video.</p>
         </div>
       </section>
 
     <!--Work-->
       <section class="work">
         <div class="full-width">
+          <h3 id="work-header">work</h3>
+          <div class="gallery">
 
+            <div class="gallery-module">
+              <h4 id="gallery-title">code</h4>
+              <div class="thumbnails">
+                <div class="gallery-placeholder"></div>
+                <div class="gallery-placeholder"></div>
+                <div class="gallery-placeholder"></div>
+              </div>
+            </div><!--end gallery module-->
+
+            <div class="gallery-module">
+              <h4 id="gallery-title">design</h4>
+              <div class="thumbnails">
+                <div class="gallery-placeholder"></div>
+                <div class="gallery-placeholder"></div>
+                <div class="gallery-placeholder"></div>
+              </div>
+            </div><!--end gallery module-->
+
+          </div><!--end gallery-->
         </div>
       </section>
 
     <!--About-->
     <section class="about">
-      <div class="half-width">
-
-      </div>
-      <div class="half-width">
-
+      <div id="about-full-width" class="full-width">
+        <h3 id="about-header">about</h3>
+        <div class="half-width">
+          <img id="portrait" src="img/portrait.png" alt="A semi-professional picture of Sevrinn Welker. ">
+        </div>
+        <div class="half-width">
+          <p>Initially going to school for music composition, I started my journey into code with a Codecademy course and have since been on a never-ending quest to learn as much as I can online. I've taken both paid and free courses from <a href="https://www.skillcrush.com">Skillcrush</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, <a href="https://teamtreehouse.com/">Treehouse</a>, <a href="https://www.udemy.com/">Udemy</a>, and more! I designed and hand-coded this website from scratch to practice what I learned. I plan on updating as my skills grow. </p>
+        </div>
       </div>
     </section>
 
     <!--Contact-->
     <section class="contact">
       <div class="full-width">
-
+        <p>Want to hire me? Have a question? Just want to say hi? Leave a message here and I'll get back to you in a timely manner:)</p>
+        <form action="#">
+          <input id="contact-name" type="text" placeholder="name" name="contact-name" required>
+          <input id="contact-email" type="text" placeholder="email" name="contact-email" required>
+          <textarea name="contact-message" id="" cols="30" rows="10" required></textarea>
+          <button type="submit" >submit</button>
+        </form>
+        <p>you can also find me online in these places</p>
+        <div id="social-media-bubbles">
+          <div class="sm-bubble"><img src="img/Twitter-white.png" alt="Twitter logo"></div>
+          <div class="sm-bubble"><img src="img/Instagram-white.png" alt="Instagram logo"></div>
+          <div class="sm-bubble"><img src="img/Github-white.png" alt="Github logo"></div>
+          <div class="sm-bubble"><img src="img/Codepen-white.png" alt="Codepen logo"></div>
+        </div>
       </div>
     </section>
   </main>
@@ -76,7 +118,7 @@
   <!--footer-->
   <footer>
     <div class="full-width">
-
+      <P>&copy;Sev Welker 2021</P>
     </div>
   </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
