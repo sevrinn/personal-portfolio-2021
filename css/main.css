@@ -86,7 +86,228 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff; 
+    background-color: #101010;
+    font-size: 18px;
+  }
 
+  /***** GRID *****/
+    .full-width {
+      width: 1200px;
+      margin: 30px auto;
+      overflow: auto;
+    }
+
+    .half-width {
+      width: 600px;
+      float: left;
+     
+    }
+
+    .third-width {
+      width: 400px;
+      float: left;
+     
+    }
+
+/***** HEADER SECTION *****/
+    header {
+      height: 100vh;
+    }
+    #header .full-width {
+      padding: 80px 0;
+      
+    }
+
+    /***** LOGO *****/
+      #logo-icon {
+        height:100px;
+        width: 100px;
+      }
+      #logo {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Shrikhand', cursive;
+        font-size: 2.5rem;
+      }
+      .sev {
+        color:#d9a64b;
+        padding: 0px 10px;
+      }
+      .welker {
+        color:#348ba0;
+      }
+    /***** NAV SECITON *****/
+
+      nav {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.5rem;
+      }
+
+      #work-nav {
+        color:#de91aa;
+      }
+      #about-nav {
+        color:#d9a64b;
+        padding-left: 25%;
+      }
+      #contact-nav {
+        color:#348ba0;
+        padding-left: 25%;
+      }
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+      }
+      nav ul li {
+        list-style-type: none;
+      }
+    /***** INTRO SECITON *****/
+      .intro {
+        font-size: 3.5rem;
+        line-height: ;
+       
+        text-align: center;
+      }
+
+      #intro-full-width {
+        
+      }
+/***** MAIN SECITON *****/
+main #intro-text {
+  padding: 80px;
+}
+h2 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+  /***** WORK SECTION*****/
+  #work {
+    height: 100vh;
+  }
+  .background-img-intro {
+    background: url(../img/christian-bolt--unsplash.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  }
+    #work h2{
+      color:#de91aa;
+      background-color: #101010;
+      padding: 0 0 .5em 0;
+    }
+    .background-img-work {
+      background: url(../img/pink-space.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    #gallery-title {
+      font-family: 'Shrikhand', cursive;
+      font-size: 1.5rem;
+      color:#de91aa;
+    }
+    .thumbnails {
+      display: flex;
+      justify-content: space-between;
+    }
+    .gallery-placeholder {
+      height:150px;
+      width: 250px;
+      background-color: #de91aa;
+      margin: 0 0 40px 0;
+    }
+
+/***** ABOUT SECTION *****/
+#about {
+  height: 100vh;
+}
+.background-img-about {
+  background: url(../img/jelly-yellow.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.about h2{
+  color:#d9a64b;
+  background-color: #101010;
+  padding: 0 0 .5em 0;
+}
+
+.about .full-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portrait {
+  height: 400px;
+  width: 400px;
+  filter: drop-shadow(-30px 0 0 #d9a64b);
+  overflow: visible;
+  max-width: 100%;
+  padding: 40px;
+}
+
+.about .half-width p {
+  background-color: rgba(0,0,0, 0.6);
+  padding: 40px;
+  line-height: 25px;
+}
+
+
+/***** CONTACT SECTION *****/
+#contact {
+  height: 100vh;
+}
+.contact h2{
+  color:#348ba0;
+  background-color: #101010;
+  padding: 0 0 .5em 0;
+}
+.background-img-contact {
+  background: url(../img/blue-wave.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.form-control {
+  width: 600px;
+  background:#348ba0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

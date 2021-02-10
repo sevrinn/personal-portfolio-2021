@@ -12,6 +12,10 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -28,7 +32,7 @@
 
   
   <!--HEADER-->
-  <header id="header">
+  <header id="header" class="background-img-intro">
     <div class="full-width">
       <div class="half-width" id="logo">
         <img id="logo-icon" src="img/pineapple-multi-color.png" alt="A very simple pineapple logo">
@@ -36,31 +40,34 @@
       </div>
       <nav class="half-width" id="nav">
         <ul>
-          <li id="nav1">work</li>
-          <li id="nav2">about</li>
-          <li id="nav3">contact</li>
+          <li id="work-nav"><a href="#work">work</a></li>
+          <li id="about-nav"><a href="#about">about</a></li>
+          <li id="contact-nav"><a href="#contact">contact</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
 
-  <!--MAIN-->
-  <main>
-    <!--Home-->
+      <!--Intro-->
       <section class="intro">
         <div id="intro-full-width" class="full-width">
           <p id="intro-text">I am a San Francisco based designer and front-end web developer focused on crafting clean and creative user-friendly experiences with code, design, music and video.</p>
         </div>
       </section>
+    </div>
+  </header>
+
+  <!--MAIN-->
+  <main>
+    
 
     <!--Work-->
-      <section class="work">
+      <section id="work" class="background-img-work">
+        <h2 id="work-header">work</h2>
         <div class="full-width">
-          <h3 id="work-header">work</h3>
+          
           <div class="gallery">
 
             <div class="gallery-module">
-              <h4 id="gallery-title">code</h4>
+              <h3 id="gallery-title">code</h3>
               <div class="thumbnails">
                 <div class="gallery-placeholder"></div>
                 <div class="gallery-placeholder"></div>
@@ -69,7 +76,7 @@
             </div><!--end gallery module-->
 
             <div class="gallery-module">
-              <h4 id="gallery-title">design</h4>
+              <h3 id="gallery-title">design</h3>
               <div class="thumbnails">
                 <div class="gallery-placeholder"></div>
                 <div class="gallery-placeholder"></div>
@@ -80,29 +87,31 @@
           </div><!--end gallery-->
         </div>
       </section>
-
+      
     <!--About-->
-    <section class="about">
+    <section id="about" class="about  background-img-about">
+      <h2 id="about-header">about</h2>
       <div id="about-full-width" class="full-width">
-        <h3 id="about-header">about</h3>
-        <div class="half-width">
+        
+        <div id="portrait-container" class="half-width">
           <img id="portrait" src="img/portrait.png" alt="A semi-professional picture of Sevrinn Welker. ">
         </div>
-        <div class="half-width">
+        <div class="half-width bio-blurb">
           <p>Initially going to school for music composition, I started my journey into code with a Codecademy course and have since been on a never-ending quest to learn as much as I can online. I've taken both paid and free courses from <a href="https://www.skillcrush.com">Skillcrush</a>, <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, <a href="https://teamtreehouse.com/">Treehouse</a>, <a href="https://www.udemy.com/">Udemy</a>, and more! I designed and hand-coded this website from scratch to practice what I learned. I plan on updating as my skills grow. </p>
         </div>
       </div>
     </section>
 
     <!--Contact-->
-    <section class="contact">
+    <section id="contact" class="contact background-img-contact">
+      <h2 id="contact-header">contact</h2>
       <div class="full-width">
         <p>Want to hire me? Have a question? Just want to say hi? Leave a message here and I'll get back to you in a timely manner:)</p>
-        <form action="#">
-          <input id="contact-name" type="text" placeholder="name" name="contact-name" required>
-          <input id="contact-email" type="text" placeholder="email" name="contact-email" required>
-          <textarea name="contact-message" id="" cols="30" rows="10" required></textarea>
-          <button type="submit" >submit</button>
+        <form id="contact-form" method="POST" action="contact-form-handler">
+          <input id="contact-name" class="form-control" type="text" placeholder="name" name="contact-name" required>
+          <input id="contact-email" class="form-control" type="text" placeholder="email" name="contact-email" required>
+          <textarea name="contact-message" class="form-control" id="contact-message" cols="30" rows="10" placeholder="message" required></textarea>
+          <input type="submit" class="submit-form" value="Submit">
         </form>
         <p>you can also find me online in these places</p>
         <div id="social-media-bubbles">
