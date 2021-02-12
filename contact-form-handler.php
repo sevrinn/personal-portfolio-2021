@@ -8,7 +8,7 @@
    
 
             if(isset($_POST['visitor_name'])) {
-                $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STIRNG);
+                $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
                 $email_body .= "<div>
                                     <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
                                 </div>";
