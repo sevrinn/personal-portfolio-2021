@@ -107,11 +107,16 @@
       <h2 id="contact-header">contact</h2>
       <div class="full-width">
         <p>Want to hire me? Have a question? Just want to say hi? Leave a message here and I'll get back to you in a timely manner:)</p>
-        <form id="contact-form" method="POST" action="contact-form-handler">
-          <input id="contact-name" class="form-control" type="text" placeholder="name" name="contact-name" required>
-          <input id="contact-email" class="form-control" type="text" placeholder="email" name="contact-email" required>
-          <textarea name="contact-message" class="form-control" id="contact-message" cols="30" rows="10" placeholder="message" required></textarea>
+        <!--Form-->
+        <form id="contact-form" method="POST" action="contact-form-handler.php">
+
+          <input id="contact-name" class="form-control" type="text" placeholder="name" name="visitor-name" pattern=[A-Z\sa-z]{3,20} required>
+
+          <input id="contact-email" class="form-control" type="text" placeholder="email" name="visitor-email" required>
+            
+          <textarea name="visitor-message" class="form-control" id="contact-message" cols="30" rows="10" placeholder="message" required></textarea>
           <input type="submit" class="submit-form" value="Submit">
+          <button type="submit">Submit</button>
         </form>
         <p>you can also find me online in these places</p>
         <div id="social-media-bubbles">
