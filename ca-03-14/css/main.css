@@ -1,0 +1,1039 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*
+ * BASIC STYLING
+ */
+ * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  /*font-size: calc(16px + 2vw);*/
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  color: #4d5a5c;
+}
+
+nav {
+  background: #b9cbcc;
+  padding: 0 15px;
+}
+
+a {
+  color: #4d5a5c;
+  text-decoration: none;
+}
+
+h3 {
+  padding: 20px;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+h4 {
+  padding: 40px 0;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-size: 25px;
+}
+
+h5 {
+  padding: 5px 0;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.menu,
+.submenu,
+.peelmenu {
+  list-style-type: none;
+}
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: inline;
+}
+.logo h1 {
+  display: inline;
+  font-size: 20px;
+  padding: 7.5px 10px 1.5px 0;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item .button {
+  padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #4d5a5c;
+}
+
+/*
+ * MOBILE MENU 
+ */
+ /* wrapping, row-based layout for mobile so that we can display the logo and toggle button next to each other on top of the menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a {
+  padding: 15px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 40px;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+
+.active .item {
+  display: block;
+}
+
+.button.secondary {
+  /* divider between buttons and menu links*/
+  border-bottom: 1px #4d5a5c solid;
+}
+
+/*Submenu up from mobile screens*/
+.submenu {
+  z-index: 1;
+  display: none;
+}
+
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu i {
+  font-size: 12px;
+}
+
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: #4d5a5c;
+  padding-left: 5px;
+}
+
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active {
+  background-color: #e6e7e0;
+  border-radius: 3px;
+}
+
+/* MOBILE HERO SECTION*/
+.hero-section {
+  background-image: url("../img/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4d5a5c;
+  height: inherit;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+}
+.book-now-btn {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  color: #e6e7e0;
+  background: #4d5a5c;
+  border: 1px #4d5a5c solid;
+  border-radius: 50px;
+  margin: 30px;
+  padding: 10px 0;
+}
+.hero-btn {
+  margin: 50px 5px 50px 5px;
+  color: #e6e7e0;
+  background: #4d5a5c;
+  border: 1px #4d5a5c solid;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 10px 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*MOBILE SERVICES*/
+#services {
+  background-color: #e6e7e0;
+  text-align: center;
+}
+
+.img-cropper {
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1vw #b9cbcc solid;
+}
+
+.section-img {
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.section-img-about {
+  margin: 0 auto;
+  
+  height: 100%;
+  width: auto;
+}
+
+.center-img-about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.center-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* MOBILE FACIALS */
+#facials {
+  border-bottom:1px dotted #4d5a5c;
+}
+
+.to-top::after {
+  content: "\2191";
+}
+.facial-modules-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+.facial-service-module {
+  text-align: left;
+  width: 80%;
+  max-width: 960px;
+  margin: 5px auto;
+}
+
+.time-price {
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.service-blurb {
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+/* MOBILE METABOLIC PEELS */
+#metabolic-peels {
+  border-bottom:1px dotted #4d5a5c;
+  background: #b9cbcc;
+}
+#metabolic-peels h4 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.meta-peels-wrapper {
+  width: 100%;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.meta-peels-group {
+  width: 80%;
+  margin: 5px auto;
+}
+
+.peel-time-price {
+  font-size: 20px;
+}
+.peel-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.peel-parent ul li {
+  
+  text-align: center;
+  
+}
+.peel-items {
+  display: inline-block;
+  
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+/* MOBILE WAXING */
+
+#waxing {
+  border-bottom:1px dotted #4d5a5c;
+}
+.wax-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  
+}
+
+.wax-group {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wax-group h5 {
+  font-size: 20px;
+}
+.wax-group ul {
+  padding: auto;
+}
+.wax-group ul li {
+  font-size: 16px;
+  list-style: none;
+  margin: 0 auto;
+  
+}
+
+#body-treatments {
+  background-color: #b9cbcc;
+}
+#body-treatments,
+#focused-treatments {
+  border-bottom:1px dotted #4d5a5c;
+}
+
+#focused-treatments ul {
+  margin-bottom: 20px;
+}
+
+#focused-treatments li {
+  font-size: 16px;
+}
+ #focused-treatments span {
+   font-weight: 800;
+ }
+
+ /* MOBILE ABOUT */
+#about {
+  text-align: center;
+  background-color: #e6e7e0;
+  
+}
+
+#about h3 {
+  margin-top: 0;
+}
+
+.about-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-wrapper p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+
+.about-wrapper p:first-child {
+  margin-top: 40px;
+}
+
+.about-wrapper p:last-child {
+  margin-bottom: 40px;
+}
+
+/* MOBILE CONTACT */
+  #contact {
+    background-color:#b9cbcc;
+    color:#4d5a5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+
+  }
+  #contact h3 {
+    text-align: center;
+    font-size: 6vw;
+    color:#4d5a5c;
+  }
+  .contact-wrapper {
+    width: 80%;
+    padding: 0 auto;
+    text-align: center;
+  }
+
+
+  /* MOBILE FOOTER */
+  footer {
+    background-color: #e6e7e0;
+    color: #4d5a5c;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*
+ * TABLET MENU 
+ */
+ @media all and (min-width: 768px) {
+
+    /* TABLET MENU */
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .logo-img {
+      height: 100px;
+    }
+    
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+
+    .item a {
+      font-size: 30px;
+    }
+
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+
+    /* Button up from tablet screen*/
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button a {
+      color: #e6e7e0;
+      background: #4d5a5c;
+      border: 1px #4d5a5c solid;
+      border-radius: 50px;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      color: #4d5a5c;
+      background: transparent;
+      border: 1px #4d5a5c solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #576769;
+      border-color: #4d5a5c;
+    }
+    
+    h3 {
+      font-size: 35px;
+    }
+    /* TABLET HERO */
+    .hero-text h2 {
+      font-size: 50px;
+    }
+    /* TABLET FACIALS*/
+    h5 {
+      font-size: 24px;
+    }
+
+    /* TABLET METABOLIC PEELS */
+
+    .meta-peels-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .meta-peels-group {
+      width: 80%;
+      margin: 5px auto;
+      max-width: 960px;
+
+    }
+    
+    #metabolic-peels .service-blurb {
+      width: 75%;
+      margin: 5px auto;
+    }
+
+    .peel-time-price {
+      font-size: 30px;
+    }
+
+    /* TABLET WAXING */
+    .wax-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      max-width: 960px;
+    }
+
+    .wax-group {
+      width: 25%;
+      margin: 0 auto;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    /*TABLET FOCUSED TREATMENTS*/
+    .focused-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 960px;
+    }
+
+    .focused-group {
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    }
+
+ /*
+ * DESKTOP MENU 
+ */
+@media all and (min-width: 1200px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #b9cbcc;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+
+  /*Desktop Styles*/
+  h3 {
+    padding: 20px;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-size: 48px;
+  }
+  
+  h4 {
+    padding-bottom: 20px 0;
+    font-family: adobe-handwriting-ernie, sans-serif;
+    font-size: 40px;
+  }
+  
+  h5 {
+    padding: 5px 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  
+  .hero-section{
+    height: 50vh;
+  }
+  .facial-modules-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .facial-service-module {
+    text-align: left;
+    width: 75%;
+    max-width: 960px;
+    margin: 5px auto;
+  }
+  
+  .time-price {
+    font-style: oblique;
+    font-size: 3vw;
+  }
+  
+  .service-blurb {
+    font-size: 16px;
+    
+  }
+
+  /* DESKTOP HERO SECTION*/
+
+  /* max size of hero text is 72px */
+  .hero-text h2 {
+    font-size: 72px;
+  }
+
+  .hero-btn {
+    font-size: 36px;
+  }
+
+  /*SERVICES SECTION*/
+  #services h3 {
+    font-size: 71.88px;
+  }
+  
+  /* DESKTOP FACIALS SECTION */
+ 
+
+  .img-cropper {
+    width: 360px;
+    height: 360px;
+  }
+
+  .facial-modules-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  .time-price {
+    font-size: 20px;
+  }
+
+  .service-blurb {
+    font-size: 20px;
+  }
+
+  /* DESKTOP METABOLIC PEELS */
+
+  .meta-peels-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .meta-peels-group {
+    width: 80%;
+    margin: 5px auto;
+    max-width: 960px;
+
+  }
+  
+  #metabolic-peels .service-blurb {
+    width: 75%;
+    margin: 5px auto;
+  }
+
+  .peel-time-price {
+    font-size: 30px;
+  }
+
+  /* DESKTOP WAXING */
+  .wax-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .wax-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5px auto;
+    max-width: 960px;
+  }
+
+  .wax-group h5 {
+    font-size: 30px;
+  }
+
+  .wax-group ul li {
+    font-size: 20px;
+  }
+
+  /* DESKTOP BODY TREATMENTS */
+
+  /*  */
+
+  /* DESKTOP CONTACT */
+  #contact h3 {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .quform-theme-light-light .quform-element > .quform-spacer > label {
+    font-size: 20px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
