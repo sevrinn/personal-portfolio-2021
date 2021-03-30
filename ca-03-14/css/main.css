@@ -121,9 +121,10 @@ h3 {
 }
 
 h4 {
-  padding: 40px 0;
+  padding: 40px 11%;
   font-family: adobe-handwriting-ernie, sans-serif;
   font-size: 25px;
+  text-align: left;
 }
 
 h5 {
@@ -243,7 +244,7 @@ h5 {
 /* MOBILE HERO SECTION*/
 .hero-section {
   background-image: url("../img/jazmin-quaynor-8ioenvmof-I-unsplash.jpg");
-  height: 100vh;
+  height:50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,12 +294,12 @@ h5 {
 }
 
 .img-cropper {
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 50vw;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 1vw #b9cbcc solid;
+  border: 2vw #b9cbcc solid;
 }
 
 .section-img {
@@ -367,8 +368,8 @@ h5 {
   background: #b9cbcc;
 }
 #metabolic-peels h4 {
-  padding-top: 40px;
-  text-align: center;
+  padding-top: 40px 11%;
+  text-align: left;
 }
 
 .meta-peels-wrapper {
@@ -439,7 +440,9 @@ h5 {
   flex-direction: column;
   justify-content: center;
 }
-
+#waxing h4 {
+  margin: 20px 15%;
+}
 .wax-group h5 {
   font-size: 20px;
 }
@@ -602,6 +605,12 @@ h5 {
     .hero-text h2 {
       font-size: 50px;
     }
+
+    .img-cropper {
+      width: 300px;
+      height: 300px;
+      border: 1vw #b9cbcc solid;
+    }
     /* TABLET FACIALS*/
     h5 {
       font-size: 24px;
@@ -634,6 +643,9 @@ h5 {
     }
 
     /* TABLET WAXING */
+    #waxing h4 {
+      text-align: center;
+    }
     .wax-wrapper {
       width: 100%;
       margin: 0 auto;
@@ -719,7 +731,10 @@ h5 {
   h4 {
     padding-bottom: 20px 0;
     font-family: adobe-handwriting-ernie, sans-serif;
+    font-weight: 900;
     font-size: 40px;
+    text-align: center;
+    
   }
   
   h5 {
@@ -774,8 +789,9 @@ h5 {
  
 
   .img-cropper {
-    width: 360px;
-    height: 360px;
+    width: 300px;
+    height: 300px;
+    border: 1vw #b9cbcc solid;
   }
 
   .facial-modules-wrapper {
@@ -854,7 +870,7 @@ h5 {
   /*  */
 
   /* DESKTOP CONTACT */
-  #contact h3 {
+  #contact h4 {
     text-align: center;
     font-size: 48px;
   }
